@@ -1,0 +1,31 @@
+// -- -- //
+
+Table Pessoa {
+  id int [pk]
+}
+
+Table Contato {
+  id int [pk]
+}
+
+Table Endereco {
+  id int [pk]
+}
+
+Table Estudante {
+  id int [pk]
+}
+
+Table Professor {
+  id int [pk]
+}
+
+Table Unidade {
+  id int [pk]
+}
+
+Table Curso {
+  id int [pk]
+}
+
+// -- -- //
