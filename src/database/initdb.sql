@@ -1,4 +1,4 @@
-GRANT ALL PRIVILEGES ON DATABASE "flask" TO "postgres";
+GRANT ALL PRIVILEGES ON DATABASE "university" TO "postgres";
 
 
 CREATE TABLE "Pessoa" (
