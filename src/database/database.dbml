@@ -29,6 +29,7 @@ Table Endereco {
 Table Estudante {
   rga char(12) [pk]
   pessoa char(11) [ref: - Pessoa.cpf]
+  curso int [ref: - Curso.id]
   unidade int [ref: - Unidade.id]
   contato uuid [ref: - Contato.id]
 }
