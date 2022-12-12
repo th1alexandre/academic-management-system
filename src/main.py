@@ -1,5 +1,6 @@
-from config import FlaskConfig
 from flask import Flask
+
+from config import FlaskConfig
 from library.exceptions import exception_handler
 from swagger import initialize_flasgger
 
