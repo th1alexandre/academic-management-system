@@ -30,14 +30,14 @@ Table Estudante {
   rga char(12) [pk]
   pessoa char(11) [ref: - Pessoa.cpf]
   curso int [ref: - Curso.id]
-  unidade int [ref: - Unidade.id]
+  unidade int [ref: > Unidade.id]
   contato uuid [ref: - Contato.id]
 }
 
 Table Professor {
   rga char(12) [pk]
   pessoa char(11) [ref: - Pessoa.cpf]
-  unidade int [ref: - Unidade.id]
+  unidade int [ref: > Unidade.id]
   contato uuid [ref: - Contato.id]
 }
 
@@ -49,7 +49,7 @@ Table Unidade {
 Table Curso {
   id int [pk]
   nome varchar(32)
-  unidade int [ref: - Unidade.id]
+  unidade int [ref: > Unidade.id]
 }
 
 // -- -- //
