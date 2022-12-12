@@ -4,6 +4,8 @@ Table Pessoa {
   cpf char(11) [pk]
   nome varchar(128)
   data_de_nascimento date
+  contato uuid [ref: - Contato.id]
+  endereco uuid [ref: - Endereco.id]
 }
 
 Table Contato {
