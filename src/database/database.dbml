@@ -1,31 +1,45 @@
 // -- -- //
 
 Table Pessoa {
-  id int [pk]
+  cpf char(11) [pk]
+  nome varchar(128)
+  data_de_nascimento date
 }
 
 Table Contato {
-  id int [pk]
+  id uuid [pk]
+  telefone_1 varchar(14) // char ?
+  telefone_2 varchar(14) // char ?
+  email varchar(256) // https://www.rfc-editor.org/rfc/rfc5321#section-4.5.3
 }
 
 Table Endereco {
-  id int [pk]
+  id uuid [pk]
+  cidade char(7) // https://www.ibge.gov.br/explica/codigos-dos-municipios.php
+  uf char(2)
+  cep char(8)
+  logradouro varchar(128)
+  numero varchar(16)
+  bairro varchar(64)
+  complemento varchar(256)
 }
 
 Table Estudante {
-  id int [pk]
+  rga char(12) [pk]
 }
 
 Table Professor {
-  id int [pk]
+  rga char(12) [pk]
 }
 
 Table Unidade {
   id int [pk]
+  nome varchar(32)
 }
 
 Table Curso {
   id int [pk]
+  nome varchar(32)
 }
 
 // -- -- //
