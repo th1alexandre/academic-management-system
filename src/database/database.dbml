@@ -49,6 +49,7 @@ Table Unidade {
 Table Curso {
   id int [pk]
   nome varchar(32)
+  unidade int [ref: - Unidade.id]
 }
 
 // -- -- //
