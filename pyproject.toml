@@ -1,7 +1,7 @@
 [tool.poetry]
-name = "flask_template"
+name = "academic-management-system"
 version = "0.1.0"
-description = "flask project template"
+description = "academic management system"
 authors = ["Th1Alexandre <th1alexandre.dev@gmail.com>"]
 readme = "README.md"
 

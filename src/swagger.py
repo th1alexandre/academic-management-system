@@ -24,10 +24,10 @@ def initialize_flasgger(app: Flask):
 
     template = dict(
         info={
-            "title": LazyString(lambda: "Flask App - Swagger UI"),
+            "title": LazyString(lambda: "AMS - Swagger UI"),
             "version": LazyString(lambda: "0.1.0"),
             "uiversion": LazyString(lambda: 3),
-            "description": LazyString(lambda: "Flask App - API Documentation"),
+            "description": LazyString(lambda: "Academic Management System - API Documentation"),
             "termsOfService": LazyString(lambda: "/there_is_no_tos"),
         },
         host=LazyString(lambda: request.host),
