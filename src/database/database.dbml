@@ -29,11 +29,13 @@ Table Endereco {
 Table Estudante {
   rga char(12) [pk]
   pessoa char(11) [ref: - Pessoa.cpf]
+  unidade int [ref: - Unidade.id]
 }
 
 Table Professor {
   rga char(12) [pk]
   pessoa char(11) [ref: - Pessoa.cpf]
+  unidade int [ref: - Unidade.id]
 }
 
 Table Unidade {
