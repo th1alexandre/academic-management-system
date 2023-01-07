@@ -2,7 +2,7 @@ GRANT ALL PRIVILEGES ON DATABASE "university" TO "postgres";
 
 
 CREATE TABLE "Pessoa" (
-  "cpf" char(11) PRIMARY KEY,
+  "cpf" char(14) PRIMARY KEY,
   "nome" varchar(128),
   "data_de_nascimento" char(10),
   "contato" uuid,

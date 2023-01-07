@@ -9,6 +9,6 @@ class Base(DeclarativeBase):
 class Pessoa(Base):
     __tablename__ = "Pessoa"
 
-    cpf = mapped_column(String(11), primary_key=True)
+    cpf = mapped_column(String(14), primary_key=True)
     nome = mapped_column(String(128), nullable=False)
     data_de_nascimento = mapped_column(String(10), nullable=False)
