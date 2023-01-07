@@ -4,7 +4,7 @@ GRANT ALL PRIVILEGES ON DATABASE "university" TO "postgres";
 CREATE TABLE "Pessoa" (
   "cpf" char(11) PRIMARY KEY,
   "nome" varchar(128),
-  "data_de_nascimento" date,
+  "data_de_nascimento" char(10),
   "contato" uuid,
   "endereco" uuid
 );

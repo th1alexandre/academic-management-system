@@ -3,7 +3,7 @@
 Table Pessoa {
   cpf char(11) [pk]
   nome varchar(128)
-  data_de_nascimento date
+  data_de_nascimento char(10)
   contato uuid [ref: - Contato.id]
   endereco uuid [ref: - Endereco.id]
 }
